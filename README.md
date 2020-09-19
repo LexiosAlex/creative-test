@@ -2,6 +2,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+### `yarn start` 
+Запустить клиент
+
+### `yarn server`
+Запустить сервер
+
+Без запуска сервера, данные получены не будут
+
+
 In the project directory, you can run:
 
 ### `yarn start`
