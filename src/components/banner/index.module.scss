@@ -1,0 +1,39 @@
+@import "src/globalStyles/variables";
+
+.bannerContainer {
+  min-height: 65vh;
+  background: center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  display: inline-block;
+  background: rgba(3,3,30,0.80);
+  color: $white;
+  padding: 2rem 1rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.banner h2 {
+  font-size: 2.5rem;
+}
+
+@media screen and (min-width: 576px) {
+  .banner {
+    padding: 2rem 3rem;
+  }
+  .banner h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner {
+    padding: 2rem 6rem;
+  }
+  .banner h2 {
+    font-size: 4rem;
+  }
+}

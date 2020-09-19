@@ -1,0 +1,22 @@
+@import "src/globalStyles/variables";
+
+.loadingContainer {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: $black;
+  background: rgba(255, 255, 255, 0.87);
+  min-height: 100%;
+  width: 100%;
+  z-index: 6;
+}
+
+.loadingIcon {
+  width: 60px;
+  height: 60px;
+}

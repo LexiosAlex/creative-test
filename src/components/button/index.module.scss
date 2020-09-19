@@ -1,0 +1,24 @@
+@import "src/globalStyles/variables";
+
+.button {
+  margin: 0;
+  padding: 10px 20px;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  border: 0;
+  border-radius: 3px;
+  background: $base-gray;
+  color: $main-font;
+  font-size: 1rem;
+  transition: $main-transition;
+  cursor: pointer;
+  &:hover {
+    background: $base-hover;
+    color: $black;
+  }
+}
+
+.buttonIcon {
+  padding-right: 10px;
+}

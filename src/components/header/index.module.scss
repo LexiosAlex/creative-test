@@ -1,0 +1,112 @@
+@import "./src/globalStyles/variables";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $base-color;
+  color: $main-font;
+  z-index: 10;
+}
+
+.navBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  order: 3;
+}
+.navIcon {
+  font-size: 1.5rem;
+  color: $main-font;
+}
+
+.mainNav {
+  height: 0;
+  width: 100%;
+  transition: $main-transition;
+  overflow: hidden;
+  order: 4;
+}
+
+.headerLogo {
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  a {
+    padding: 0 10px;
+    font-size: 1.7rem;
+    color: $main-font;
+    border: 2px solid $main-font;
+    text-decoration: none;
+    white-space: pre;
+  }
+}
+
+.showNav {
+  height: 200px;
+}
+
+.navList {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: $main-transition;
+  list-style-type: none;
+
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 0;
+    color: $main-font;
+    transition: $main-transition;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    &:hover {
+      color: $base-hover;
+    }
+  }
+}
+
+.headerContainer {
+  padding: 0.75rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 864px) {
+  .headerContainer {
+    max-width: 1170px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .navBtn {
+    display: none;
+  }
+
+  .mainNav {
+    padding-left: 2rem;
+    width: calc(100% - 350px);
+    height: auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    order: 0;
+  }
+  .navList {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    a {
+      margin: 0 1rem;
+      padding: 0.5rem 0;
+    }
+  }
+}

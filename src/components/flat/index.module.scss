@@ -1,0 +1,98 @@
+@import "src/globalStyles/variables";
+
+.flat {
+  box-shadow: $light-shadow;
+  transition: $main-transition;
+  &:hover {
+    box-shadow: $dark-shadow;
+  }
+}
+
+.imgContainer {
+  width: 100%;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.flatInfo,
+.flatRelations,
+.flatControls {
+  padding: 0 0.5rem;
+}
+
+.flatInfo {
+  display: flex;
+  flex-direction: column;
+  h3 {
+    margin: 0;
+    padding-top: 20px;
+    text-transform: capitalize;
+  }
+}
+
+.flatPrice {
+  padding: 10px 0;
+  font-size: 1.35rem;
+}
+
+.flatArea {
+  padding-bottom: 10px;
+  font-size: 1.1rem;
+  color: $base-color;
+  font-weight: 700;
+  text-decoration: none;
+  transition: $main-transition;
+}
+
+.flatAddress {
+  margin: 0;
+  padding: 0;
+  font-size: 0.92rem;
+}
+
+.flatRelations {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.relationsName,
+.relationsType {
+  margin: 0;
+  padding: 0;
+}
+
+.relationsType {
+  color: $base-gray;
+  font-size: 0.8rem;
+}
+
+.flatRelationsImgContainer {
+  padding-right: 10px;
+  width: 36px;
+  height: 36px;
+  img {
+    border-radius: 50%;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.flatControls {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin-bottom: 10px;
+  }
+}
+
+.featuredBtn {
+  background: $base-color !important;
+}
